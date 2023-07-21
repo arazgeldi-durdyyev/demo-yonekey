@@ -1,0 +1,31 @@
+@mixin maxScreen {
+    @media (max-width: $max-width) {
+        @content
+    }
+}
+
+@mixin flexContent($jContent) {
+    display: flex;
+    justify-content: $jContent;
+    align-items: center;
+    @content
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(197, 165, 162);
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(247, 148, 137)
+}
